@@ -1,0 +1,68 @@
+{% extends "./index.template.html" %}
+
+{% block left %}
+<h-1>This is the left side!</h-1>
+This is more content left
+
+<div class="bg-gradient-to-br text-white from-fuchsia-500 to-purple-600"	>
+  test purples
+</div>
+
+
+
+<!-- <div hx-target="#content3" _="on htmx:beforeOnLoad take .active from .tabs for event.target hx-selected=selected">
+    <a class="tabs active" class="selected" hx-get="http://localhost:9020/apihtmx/1" >Tab serv 1</a>
+    <a class="tabs" hx-get="http://localhost:9020/apihtmx/2">Tab serv 2</a>
+    <a class="tabs" hx-get="http://localhost:9020/apihtmx/3">Tab serv 3</a>
+  </div>
+  <div id="content3">Tab 11 Content</div> -->
+
+
+  <!-- hx-get="http://localhost:9020/apihtmx/gallerynm/images?orderBy={%22Cat1%22:1,%22SortOrder%22:1}"
+       -->
+  <button type="button" class="px-6
+      py-2.5
+      bg-blue-600
+      text-white
+      font-medium
+      text-xs
+      leading-tight
+      uppercase
+      rounded
+      shadow-md
+      hover:bg-blue-700 hover:shadow-lg
+      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-800 active:shadow-lg
+      transition
+      duration-150
+      ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      hx-get="https://backend.gtztest.com/api/galleryhw/"
+     
+      hx-target="#modalBody_2" hx-swap="innerHTML" hx-trigger="click" 
+   
+      >
+    Launch TW demo modal
+  </button>
+
+  <button type="button"
+  class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" 
+  hx-get="https://v2.jokeapi.dev/joke/Any?format=txt&safe-mode"
+  hx-target="#result5">Click Me 4 joke</button>
+  
+  <div>===================================================</div>
+  <div id="result5"></div>
+  
+  
+  
+{% endblock %}
+
+{% block right %}
+
+<h1>This is the right side!</h1>
+This is more content right
+<div class="bg-gradient-to-br text-white from-fuchsia-500 to-purple-600"	>
+  test purples right
+</div>
+
+{% endblock %}
+
